@@ -1,0 +1,26 @@
+tags:
+  - stores
+summary: Get list of Store
+description: Get list of Store
+parameters:
+ - name: limit
+   in: query
+   description: Limit max number of elements in the list
+   schema:
+     type: integer
+ - name: offset
+   in: query
+   description: Starting offset
+   schema:
+     type: integer
+responses:
+  "200":
+    description: Store is created
+    content:
+      application/json:
+        schema:
+          $ref: '../../models/store.yaml'
+  "401":
+    $ref: '../../models/errors/401-unauthorized.yaml'
+  "500":
+    $ref: '../../models/errors/500-fatal.yaml'

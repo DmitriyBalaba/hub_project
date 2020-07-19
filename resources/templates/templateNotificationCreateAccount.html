@@ -1,0 +1,27 @@
+<html>
+<body>
+    <p>
+    Hello {{.Name}}!
+    <br>
+    <br>
+    Good news! Your account in Company has been created! Use the following details to log in:
+    <br>
+    <br>
+    Username: {{.Email}}
+    <br>
+    Password: {{.Password}}
+    <br>
+    <br>
+    Open Savvie App by <a href={{if .Link}}{{.Link}}{{end}}>clicking here</a>.
+    <br>
+    <br>
+    If you need assistance, please contact help@company.io
+    <br>
+    <br>
+    Best,
+    <br>
+    Jessica from Company
+
+    </p>
+</body>
+</html>

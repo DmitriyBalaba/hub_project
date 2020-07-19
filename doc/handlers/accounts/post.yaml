@@ -1,0 +1,36 @@
+tags:
+  - accounts
+summary: Post New Account
+description: Post create new account.
+requestBody:
+  content:
+    application/json:
+      schema:
+        type: object
+        required:
+          - email
+        properties:
+          email:
+            type: string
+            format: email
+            example: some@dev.gmail.com
+          name:
+            type: string
+            example: Some name
+          is_admin:
+            type: boolean
+            example: true
+          is_store_manager:
+            type: boolean
+            example: true
+responses:
+  "200":
+    description: Account is created
+    content:
+      application/json:
+        schema:
+          $ref: '../../models/account.yaml'
+  "401":
+    $ref: '../../models/errors/401-unauthorized.yaml'
+  "500":
+    $ref: '../../models/errors/500-fatal.yaml'

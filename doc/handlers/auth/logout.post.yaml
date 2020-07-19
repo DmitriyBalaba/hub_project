@@ -1,0 +1,9 @@
+tags:
+  - auth
+summary: Post Logout
+description: End current session if exists.
+responses:
+  "200":
+    description: Session has been terminated.
+  "500":
+    $ref: '../../models/errors/500-fatal.yaml'

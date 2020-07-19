@@ -1,0 +1,32 @@
+tags:
+  - auth
+summary: Post Login
+description: Post user credentials in order to start session.
+requestBody:
+  content:
+    application/json:
+      schema:
+        type: object
+        required:
+          - email
+          - password
+        properties:
+          email:
+            type: string
+            format: email
+            example: some@dev.gmail.com
+          password:
+            type: string
+            format: password
+            example: 123
+responses:
+  "200":
+    description: Credentials are valid. Authorized.
+    content:
+      application/json:
+        schema:
+          $ref: '../../models/account.yaml'
+  "401":
+    $ref: '../../models/errors/401-unauthorized.yaml'
+  "500":
+    $ref: '../../models/errors/500-fatal.yaml'

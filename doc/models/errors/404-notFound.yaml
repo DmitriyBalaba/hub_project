@@ -1,0 +1,11 @@
+description: Not Found
+content:
+  application/json:
+    schema:
+      type: object
+      required:
+        - message
+      properties:
+        message:
+          type: string
+          example: "object not found because of ..."

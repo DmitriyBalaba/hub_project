@@ -1,0 +1,20 @@
+tags:
+  - stores
+summary: Delete Store
+description: Delete store by ID
+parameters:
+  - name: id
+    in: path
+    description: ID of store
+    required: true
+    schema:
+      type: integer
+responses:
+  "200":
+    description: Store is deleted
+  "400":
+    $ref: '../../models/errors/400-badRequest.yaml'
+  "401":
+    $ref: '../../models/errors/401-unauthorized.yaml'
+  "500":
+    $ref: '../../models/errors/500-fatal.yaml'

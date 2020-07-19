@@ -1,0 +1,78 @@
+# bitbucket.org/jazzserve/webapi v0.0.0-20200410133131-f2335fb44e8e
+bitbucket.org/jazzserve/webapi/cmd
+bitbucket.org/jazzserve/webapi/databases/gorm/postgres
+bitbucket.org/jazzserve/webapi/email
+bitbucket.org/jazzserve/webapi/email/sendgrid
+bitbucket.org/jazzserve/webapi/email/smtp
+bitbucket.org/jazzserve/webapi/env
+bitbucket.org/jazzserve/webapi/resources/filesys
+bitbucket.org/jazzserve/webapi/security/jwt
+bitbucket.org/jazzserve/webapi/sessions/memory
+bitbucket.org/jazzserve/webapi/sessions/redis/store
+bitbucket.org/jazzserve/webapi/storage
+bitbucket.org/jazzserve/webapi/storage/gorm
+bitbucket.org/jazzserve/webapi/utils
+bitbucket.org/jazzserve/webapi/utils/pointers/ptr
+bitbucket.org/jazzserve/webapi/utils/pointers/val
+bitbucket.org/jazzserve/webapi/web/http/cors
+bitbucket.org/jazzserve/webapi/web/http/payload
+bitbucket.org/jazzserve/webapi/web/http/routing
+bitbucket.org/jazzserve/webapi/web/http/server
+# github.com/dgrijalva/jwt-go v3.2.0+incompatible
+github.com/dgrijalva/jwt-go
+# github.com/go-playground/locales v0.13.0
+github.com/go-playground/locales
+github.com/go-playground/locales/currency
+# github.com/go-playground/universal-translator v0.17.0
+github.com/go-playground/universal-translator
+# github.com/gomodule/redigo v2.0.0+incompatible
+github.com/gomodule/redigo/internal
+github.com/gomodule/redigo/redis
+# github.com/gorilla/handlers v1.4.2
+github.com/gorilla/handlers
+# github.com/gorilla/mux v1.7.4
+github.com/gorilla/mux
+# github.com/gorilla/schema v1.1.0
+github.com/gorilla/schema
+# github.com/gorilla/securecookie v1.1.1
+github.com/gorilla/securecookie
+# github.com/gorilla/sessions v1.2.0
+github.com/gorilla/sessions
+# github.com/inconshreveable/mousetrap v1.0.0
+github.com/inconshreveable/mousetrap
+# github.com/jinzhu/copier v0.0.0-20190924061706-b57f9002281a
+github.com/jinzhu/copier
+# github.com/jinzhu/gorm v1.9.14
+github.com/jinzhu/gorm
+github.com/jinzhu/gorm/dialects/postgres
+# github.com/jinzhu/inflection v1.0.0
+github.com/jinzhu/inflection
+# github.com/justinas/alice v1.2.0
+github.com/justinas/alice
+# github.com/leodido/go-urn v1.2.0
+github.com/leodido/go-urn
+# github.com/lib/pq v1.1.1
+github.com/lib/pq
+github.com/lib/pq/hstore
+github.com/lib/pq/oid
+github.com/lib/pq/scram
+# github.com/pkg/errors v0.9.1
+github.com/pkg/errors
+# github.com/rs/zerolog v1.19.0
+github.com/rs/zerolog
+github.com/rs/zerolog/internal/cbor
+github.com/rs/zerolog/internal/json
+github.com/rs/zerolog/log
+# github.com/sendgrid/rest v2.6.0+incompatible
+github.com/sendgrid/rest
+# github.com/sendgrid/sendgrid-go v3.6.0+incompatible
+github.com/sendgrid/sendgrid-go
+github.com/sendgrid/sendgrid-go/helpers/mail
+# github.com/spf13/cobra v1.0.0
+github.com/spf13/cobra
+# github.com/spf13/pflag v1.0.3
+github.com/spf13/pflag
+# gopkg.in/go-playground/validator.v9 v9.31.0
+gopkg.in/go-playground/validator.v9
+# gopkg.in/yaml.v2 v2.3.0
+gopkg.in/yaml.v2

@@ -1,0 +1,14 @@
+type: object
+properties:
+  id:
+    type: integer
+    example: 131
+  name:
+    type: string
+    example: FILATOV MAXIM
+  email:
+    type: string
+    example: some@dev.gmail.com
+  is_admin:
+    type: bool
+    example: true

@@ -1,0 +1,6 @@
+name: offset
+in: query
+description: Number of elements to skip.
+schema:
+  type: integer
+  example: 10

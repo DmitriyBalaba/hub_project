@@ -1,0 +1,69 @@
+openapi: 3.0.0
+info:
+  title: Savvie API
+  description: Savvie API documentation.
+  version: "beta"
+  contact:
+    email: hello@hub-project.com
+
+security:
+  - cookieAuth: []
+
+components:
+  securitySchemes:
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: session-id
+      description: |
+        Cookie authentication uses HTTP cookies to authenticate client requests and maintain session information.
+
+servers:
+  - url: http://develop.hub.project.com:9080/
+    description: Development environment.
+
+tags:
+  - name: auth
+    description: Auth
+    x-displayName: Auth
+
+  - name: accounts
+    description: Accounts
+    x-displayName: Accounts
+
+  - name: stores
+    description: Stores
+    x-displayName: Stores
+
+paths:
+  /login:
+    post:
+      $ref: 'auth/login.post.yaml'
+
+  /logout:
+    post:
+      $ref: 'auth/logout.post.yaml'
+
+  /accounts:
+    post:
+      $ref: 'accounts/post.yaml'
+    get:
+      $ref: 'accounts/get.yaml'
+
+  /accounts/{id}:
+    put:
+      $ref: 'accounts/put.yaml'
+    delete:
+      $ref: 'accounts/delete.yaml'
+
+  /stores:
+    post:
+      $ref: 'stores/post.yaml'
+    get:
+      $ref: 'stores/get.yaml'
+
+  /stores/{id}:
+    put:
+      $ref: 'stores/put.yaml'
+    delete:
+      $ref: 'stores/delete.yaml'

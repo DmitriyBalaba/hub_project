@@ -1,0 +1,12 @@
+type: object
+properties:
+  id:
+    type: integer
+    example: 131
+  address:
+    type: string
+    example: Some address
+  account_list:
+    type: array
+    items:
+      $ref: 'account.yaml'

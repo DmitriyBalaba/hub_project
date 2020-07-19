@@ -1,0 +1,43 @@
+tags:
+  - accounts
+summary: Put Account
+description: Update account by ID
+parameters:
+  - name: id
+    in: path
+    description: ID of account
+    required: true
+    schema:
+      type: integer
+requestBody:
+  content:
+    application/json:
+      schema:
+        type: object
+        properties:
+          email:
+            type: string
+            format: email
+            example: some@dev.gmail.com
+          name:
+            type: string
+            example: Some name
+          is_admin:
+            type: boolean
+            example: true
+          is_store_manager:
+            type: boolean
+            example: true
+responses:
+  "200":
+    description: Account is updated
+    content:
+      application/json:
+        schema:
+          $ref: '../../models/account.yaml'
+  "400":
+    $ref: '../../models/errors/400-badRequest.yaml'
+  "401":
+    $ref: '../../models/errors/401-unauthorized.yaml'
+  "500":
+    $ref: '../../models/errors/500-fatal.yaml'

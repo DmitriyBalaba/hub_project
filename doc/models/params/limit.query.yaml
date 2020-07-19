@@ -1,0 +1,6 @@
+name: limit
+in: query
+description: Max number of elements in result list.
+schema:
+  type: integer
+  example: 20
